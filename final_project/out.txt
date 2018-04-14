@@ -1,0 +1,91 @@
+Pipeline(steps=[('pca', PCA(copy=True, n_components=3, whiten=False)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=10, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.80036	Precision: 0.24921	Recall: 0.19750	F1: 0.22036	F2: 0.20605
+	Total predictions: 14000	True positives:  395	False positives: 1190	False negatives: 1605	True negatives: 10810
+
+Pipeline(steps=[('pca', PCA(copy=True, n_components=3, whiten=False)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.78600	Precision: 0.24488	Recall: 0.23900	F1: 0.24190	F2: 0.24015
+	Total predictions: 14000	True positives:  478	False positives: 1474	False negatives: 1522	True negatives: 10526
+
+Pipeline(steps=[('pca', PCA(copy=True, n_components=4, whiten=False)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.80614	Precision: 0.30449	Recall: 0.27800	F1: 0.29064	F2: 0.28292
+	Total predictions: 14000	True positives:  556	False positives: 1270	False negatives: 1444	True negatives: 10730
+
+Pipeline(steps=[('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.79479	Precision: 0.27395	Recall: 0.26450	F1: 0.26914	F2: 0.26634
+	Total predictions: 14000	True positives:  529	False positives: 1402	False negatives: 1471	True negatives: 10598
+
+Pipeline(steps=[('pca', PCA(copy=True, n_components=5, whiten=False)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.80836	Precision: 0.31308	Recall: 0.28600	F1: 0.29893	F2: 0.29103
+	Total predictions: 14000	True positives:  572	False positives: 1255	False negatives: 1428	True negatives: 10745
+
+Pipeline(steps=[('normalize', StandardScaler(copy=True, with_mean=True, with_std=True)), ('pca', PCA(copy=True, n_components=5, whiten=False)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.80921	Precision: 0.30299	Recall: 0.25800	F1: 0.27869	F2: 0.26590
+	Total predictions: 14000	True positives:  516	False positives: 1187	False negatives: 1484	True negatives: 10813
+
+Pipeline(steps=[('pca', PCA(copy=True, n_components=5, whiten=False)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.77950	Precision: 0.22228	Recall: 0.21750	F1: 0.21986	F2: 0.21844
+	Total predictions: 14000	True positives:  435	False positives: 1522	False negatives: 1565	True negatives: 10478
+
+Pipeline(steps=[('pca', PCA(copy=True, n_components=5, whiten=False)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.80650	Precision: 0.30889	Recall: 0.28650	F1: 0.29728	F2: 0.29072
+	Total predictions: 14000	True positives:  573	False positives: 1282	False negatives: 1427	True negatives: 10718
+
+Pipeline(steps=[('normalize', StandardScaler(copy=True, with_mean=True, with_std=True)), ('pca', PCA(copy=True, n_components=5, whiten=False)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.78471	Precision: 0.21676	Recall: 0.19400	F1: 0.20475	F2: 0.19816
+	Total predictions: 14000	True positives:  388	False positives: 1402	False negatives: 1612	True negatives: 10598
+
+Pipeline(steps=[('normalize', StandardScaler(copy=True, with_mean=True, with_std=True)), ('pca', PCA(copy=True, n_components=5, whiten=False)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.77850	Precision: 0.21403	Recall: 0.20600	F1: 0.20994	F2: 0.20756
+	Total predictions: 14000	True positives:  412	False positives: 1513	False negatives: 1588	True negatives: 10487
+
+Pipeline(steps=[('normalize', StandardScaler(copy=True, with_mean=True, with_std=True)), ('pca', PCA(copy=True, n_components=5, whiten=False)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.77157	Precision: 0.17587	Recall: 0.16250	F1: 0.16892	F2: 0.16501
+	Total predictions: 14000	True positives:  325	False positives: 1523	False negatives: 1675	True negatives: 10477
+
+Pipeline(steps=[('normalize', StandardScaler(copy=True, with_mean=True, with_std=True)), ('pca', PCA(copy=True, n_components=5, whiten=False)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.78254	Precision: 0.26546	Recall: 0.23400	F1: 0.24874	F2: 0.23968
+	Total predictions: 13000	True positives:  468	False positives: 1295	False negatives: 1532	True negatives: 9705
+
+Pipeline(steps=[('normalize', StandardScaler(copy=True, with_mean=True, with_std=True)), ('pca', PCA(copy=True, n_components=5, whiten=False)), ('tree', DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None, min_samples_leaf=1,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'))])
+	Accuracy: 0.78185	Precision: 0.26331	Recall: 0.23250	F1: 0.24695	F2: 0.23807
+	Total predictions: 13000	True positives:  465	False positives: 1301	False negatives: 1535	True negatives: 9699
+

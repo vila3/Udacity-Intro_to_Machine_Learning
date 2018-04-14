@@ -45,6 +45,7 @@ def test_classifier(clf, dataset, feature_list, folds = 1000):
         ### fit the classifier using training set, and test on test set
         clf.fit(features_train, labels_train)
         predictions = clf.predict(features_test)
+
         for prediction, truth in zip(predictions, labels_test):
             if prediction == 0 and truth == 0:
                 true_negatives += 1
@@ -59,6 +60,9 @@ def test_classifier(clf, dataset, feature_list, folds = 1000):
                 print "All predictions should take value 0 or 1."
                 print "Evaluating performance for processed predictions:"
                 break
+    # orig_stdout = sys.stdout
+    # f = file('out.txt', 'a')
+    # sys.stdout = f
     try:
         total_predictions = true_negatives + false_negatives + false_positives + true_positives
         accuracy = 1.0*(true_positives + true_negatives)/total_predictions
@@ -73,6 +77,8 @@ def test_classifier(clf, dataset, feature_list, folds = 1000):
     except:
         print "Got a divide by zero when trying out:", clf
         print "Precision or recall may be undefined due to a lack of true positive predicitons."
+    # sys.stdout = orig_stdout
+    # f.close()
 
 CLF_PICKLE_FILENAME = "my_classifier.pkl"
 DATASET_PICKLE_FILENAME = "my_dataset.pkl"

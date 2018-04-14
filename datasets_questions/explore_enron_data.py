@@ -19,4 +19,15 @@ import pickle
 
 enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
 
+print "Number of people in Enron dataset:", len(enron_data)
 
+qtd = 0
+total = 0
+for person in enron_data:
+    if enron_data[person]["poi"] == 1:
+        total += 1
+        if enron_data[person]["total_payments"] == 'NaN':
+            qtd += 1
+
+print qtd
+print (float(qtd)/total)*100, "%"
